@@ -1,0 +1,101 @@
+<!-- this is contain all cart information -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/cart.css">
+   <link rel="stylesheet" href="../css/respnsive.css">
+</head>
+<body>
+
+  <!-- Navbar for navigation -->
+  <!--  NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo"> 🛍️ MyShop</div>
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/products.html">Products</a>
+
+       
+<!--  Replace old Cart link with this new HTML -->
+<div class="cart-wrapper">
+  <a href="../html/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  <span id="cart-count">0</span>
+</div>
+ 
+            <!-- this is profile drop-down -->
+  
+        <div class="profile-dropdown" id="profileDropdown">
+            <i class="fa-solid fa-user profile-icon" id="profileIcon"></i>
+          <div class="dropdown-menu" id="dropdownMenu">
+           
+            <a href="#" id="logout">Logout</a>
+         </div> 
+        </div>      
+
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+  <h1>Your Cart</h1>
+
+  <!--Table for cart items -->
+ <div class="table-wrapper">
+    <table id="cart-table">
+
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product</th>
+          <th>Price (₹)</th>
+          <th>Qty</th>
+          <th>Subtotal (₹)</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- JS will inject rows -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" style="text-align: right;"><strong>Total:</strong></td>
+          <td colspan="1"><strong>₹<span id="cart-total">0</span></strong></td>
+        </tr>
+      </tfoot>
+    </table>
+   
+
+
+  </div>
+  <!-- check-out-btn -->
+<div class="checkout-wrapper">
+  <button id="checkout-btn">Proceed to Checkout</button>
+</div>
+
+<!-- Add this below the Checkout Button -->
+<div class="empty-cart-wrapper">
+  <button id="empty-cart-btn">Empty Cart</button>
+</div>
+
+
+</main>
+
+
+  <!--  JS -->
+  <script src="../js/cart.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/product.js"></script>
+    <script src="../js/logout.js"></script>
+</body>
+</html>

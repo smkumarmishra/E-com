@@ -1,0 +1,122 @@
+/* cart.htm */
+
+.delete-btn i{
+    background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: red;
+  cursor: pointer;
+}
+.delete-btn i:hover {
+  transform: scale(1.2);
+}
+h1{
+  text-align: center;
+  margin: 2rem 0;
+  color: rgb(47, 49, 45);
+  font-weight:900 ;
+}
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0px;
+  font-family: sans-serif;
+  max-width: 1000px;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+img {
+  width: 50px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.qty-btn {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 0 4px;
+  background-color: #c3c9c2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.decrese-btn:hover {
+  background-color: #f10707;
+   transform: scale(1.2);
+}
+.increse-btn:hover{
+    background-color: #31e631;
+     transform: scale(1.2);
+}
+
+.qty-value {
+  font-size: 16px;
+  margin: 0 4px;
+}
+
+/* ----------------------check out btn css--------------- */
+
+.checkout-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#checkout-btn {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#checkout-btn:hover {
+  background-color: darkgreen;
+}
+
+/* empty btn design---- */
+
+.empty-cart-wrapper {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#empty-cart-btn {
+  padding: 10px 26px;
+  font-size: 16px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#empty-cart-btn:hover {
+  background-color: darkred;
+}

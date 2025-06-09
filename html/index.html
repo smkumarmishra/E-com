@@ -1,0 +1,133 @@
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyShop - E-Commerce</title>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/respnsive.css">
+
+
+  
+</head>
+<body>
+
+  <!--  NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo"> 🛍️ MyShop</div>
+       <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/products.html">Products</a>
+       
+       
+<!--  Cart link with this new HTML -->
+<div class="cart-wrapper">
+  <a href="../html/cart.html"><i class="fa-solid fa-cart-shopping cart-icon"></i></a>
+  <span id="cart-count">0</span>
+</div>
+ 
+            <!-- this is profile drop-down -->
+  
+        <div class="profile-dropdown" id="profileDropdown">
+          <i class="fa-solid fa-user profile-icon" id="profileIcon"></i>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="login.html">Login </a>
+            <a href="../html/register.html">Register</a>
+            <!-- <a href="#" id="logout">Logout</a> -->
+         </div> 
+        </div>      
+         
+      </nav>
+      
+    </div>
+  </header>
+
+  <!-- --- HERO SECTION WITH BACKGROUND IMAGE -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to MyShop</h1>
+        
+      <p>Your one-stop fashion destination</p>
+       <div class="btn-hero"><button onclick="window.location.href='../html/products.html'">Shop Now! <i class="fa-solid fa-cart-shopping"></i></button></div>
+      
+    </div>
+   
+  </section>
+
+  <!-- -- PRODUCT SECTION -->
+  <main>
+    <h2 class="section-title">Our Products</h2>
+    <div id="product-list" class="product-grid">
+      <!-- Products load honge JS se -->
+    </div>
+  </main>
+  <!-- -------------------------------- footer--------------------------------------------------- -->
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>MyShop</h3>
+      <p>Your one-stop online store for everything!</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/products.html">Products</a></li>
+        <li><a href="../html/cart.html">Cart</a></li>
+        <li><a href="../html/register.html">Register</a></li>
+        <li><a href="../html/login.html">Login</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Email: support@myshop.com</p>
+      <p>Phone: +91-9876543210</p>
+      <p>Whatsapp: +91 7362052372</p>
+      <pre>Location: Apna Bihar,Aurangabad City, 
+                Newtown,Karma,824102,
+                Bihar, India</pre>
+    </div>
+
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <ul class="social-icons">
+       <li> <a href="#"><i class="fa-brands fa-facebook-f fa-beat"></i> Facebook.com</a></li>
+      <li> <a href=""><i class="fa-brands fa-instagram fa-beat"></i> Instagram.com</a></li>
+      <li> <a href=""><i class="fa-brands fa-square-youtube fa-beat"></i> Youtube.com</a></li>
+      <li> <a><i class="fa-brands fa-linkedin-in fa-beat"></i> Linkedin.com</a></li>
+      <li> <a href=""><i class="fa-brands fa-whatsapp fa-beat"></i> Whatsapp.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 MyShop & saurbh. All rights reserved.</p>
+  </div>
+</footer>
+
+
+ 
+  
+
+
+  <script src="../js/product.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/register.js"></script>
+  <script src="../js/logout.js"></script>
+  <script src="../js/checkOut.js"></script>
+</body>
+</html>

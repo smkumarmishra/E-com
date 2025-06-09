@@ -1,0 +1,105 @@
+
+/* ---------------------------successful.html page ka css hai ye----------------------------- */
+/* Order Success Page Styles */
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0fff0, #d0ffd0);
+}
+
+.success-box {
+  background-color: white;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+}
+
+.success-box img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.success-box h1 {
+  color: green;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.success-box p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: darkgreen;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .success-box {
+    padding: 25px 20px;
+  }
+
+  .success-box h1 {
+    font-size: 20px;
+  }
+
+  .success-box p {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
+
+
+
+
+
+

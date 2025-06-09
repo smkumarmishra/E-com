@@ -1,0 +1,162 @@
+/* -------- RESPONSIVE NAVBAR (Mobile) -------- */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+    
+   
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Cart wrapper ko relative banaye */
+.cart-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+/* humburg respnsive */
+  .navbar .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    color: #333;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu a {
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .profile-dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    top: -6px;
+    right: -9px;
+    background: #fff;
+    width: 70%;
+    border: 2px solid gray;
+  }
+  #cart-count {
+  position: absolute;
+  top: -8px;
+  right: 75px;
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    font-weight: bold;
+    color: #555;
+    white-space: nowrap;
+  }
+
+  img {
+    width: 40px;
+    height: auto;
+  }
+
+  .qty-btn {
+    margin: 4px 2px;
+    font-size: 14px;
+  }
+
+  .checkout-wrapper,
+  .empty-cart-wrapper {
+    text-align: center;
+  }
+
+  tfoot {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  tfoot tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-weight: bold;
+  }
+
+  tfoot td {
+    padding: 10px 0;
+    border: none;
+    text-align: center;
+  }
+}

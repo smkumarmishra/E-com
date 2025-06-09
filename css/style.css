@@ -1,0 +1,255 @@
+/* style.css */
+
+/* -------- GENERAL RESET -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+
+  background: radial-gradient(ellipse, #f0b6b6 30%, #b6b6b1 60%, #c6dbc6 100%);
+
+  color: #333;
+}
+
+/* -------- NAVBAR STYLING -------- */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky; /* Stay at top while scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+ .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+.nav-menu a i{
+   font-weight: 800;
+   font-size: 1.7rem;
+}
+
+
+/* Cart wrapper ko relative banaye */
+.cart-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Cart count badge ko top-right corner me dikhaye */
+#cart-count {
+  position: absolute;
+  top: -8px;
+  right: -15px;
+  background-color: #f87070;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.btn-hero button{
+  margin-top: 1.6rem;
+  padding: 1.3rem;
+  font-size: 1.2rem;
+  background: #93ed93;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 2px 3px 3px rgb(228, 220, 220);
+  cursor: pointer;
+}
+.btn-hero button:hover{
+  background-color: #0beb0b;
+  transform: scale(1.1);
+
+}
+
+.nav-menu a:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}
+.nav-menu a i:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+/* -------- HERO SECTION -------- */
+.hero {
+  position: relative;
+  height: 80vh; /* 80% of screen height */
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.5); /* dark transparent background */
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* -------- PRODUCT SECTION -------- */
+.section-title {
+  text-align: center;
+  margin: 3rem 0 1rem;
+  font-size: 2rem;
+}
+
+.product-grid {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product {
+  background: radial-gradient(ellipse, #f0b3d2 50%, #76cbe0 100%, #aa69fa 80%, rgb(240, 163, 163) 20%);
+
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.product:hover {
+  transform: translateY(-5px);
+}
+.product img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  border: 2px solid rgb(23, 23, 23);
+}
+.product h3 {
+  margin: 10px 0 5px;
+}
+.product p {
+  font-size: 1rem;
+  color: #555;
+}
+.product button {
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product button:hover {
+  background-color: #0056b3;
+  
+}
+
+/* profile drop-down style */
+
+ .profile-dropdown {
+      position: relative;
+    }
+
+    .profile-icon {
+      font-size: 24px;
+      cursor: pointer;
+    
+    }
+    .profile-icon:hover{
+      color: #268af5;
+      transform: scale(1.2);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      background-color: white;
+      color: black;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      min-width: 120px;
+      display: none;
+      flex-direction: column;
+      z-index: 100;
+      
+
+    }
+
+    .dropdown-menu a {
+      padding: 10px;
+      text-decoration: none;
+      color: black !important;
+      border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #f0f0f0;
+      transform: none !important;
+      color: #2287f3 !important;
+    }
+
+    /* Show dropdown when active class is added */
+    .dropdown-menu.show {
+      display: flex;
+    }
+
+
+    /* this is humburger style */
+
+    .hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
